@@ -10,7 +10,7 @@ epsp: the dielectric constant inside the spheres
 
 epsw: the dielectric constant of the solvent
 
-bulk_strength: the ionic concentration (M)
+bulk_strength: the ionic concentration strength (M)
 
 den: an integer that determines the number of icosahedron grids on each sphere (20*4^den), for a good accuracy, choosing den at least 3.
 
