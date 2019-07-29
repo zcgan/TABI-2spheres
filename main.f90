@@ -159,7 +159,7 @@ print *,'-----Free energy=:', couleng+soleng, ' kcal/mol '
 !call output_potential_centroid  !output potential at centriod
 call output_potential           !output potential at vertices (can be visualized in VMD)
 
-open(10,file='elec_energy.dat')
+open(10,file='energy.dat')
 write (10,*) (couleng+soleng)
 
 call cpu_time(cpu4)
