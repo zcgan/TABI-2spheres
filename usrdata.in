@@ -1,0 +1,7 @@
+epsp 4
+epsw 78.5
+bulk_strength 1.6
+den 3
+order 3
+maxparnode 500
+mac 0.5
