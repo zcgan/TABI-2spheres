@@ -1,4 +1,4 @@
-# makefile for bimpb
+# makefile for TABI-2spheres
 #F90= ifort
 #flag= -fast -c  
 F90 = gfortran
