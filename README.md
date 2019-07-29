@@ -12,7 +12,7 @@ epsw: the dielectric constant of the solvent
 
 bulk_strength: the ionic concentration (M)
 
-den: an integer that determines the number of grids on each sphere (20*4^den), for a good accuracy, choosing den at least 3.
+den: an integer that determines the number of icosahedron grids on each sphere (20*4^den), for a good accuracy, choosing den at least 3.
 
 order: treecode multipole expansion order, also need to be an integer, here set to be 3.
 
@@ -43,21 +43,14 @@ it gives the electrostatic free energy value in unit of Kcal/mol.
 Note that if one wants to get the interaction energy, then further subtract the energy value for the two spheres at sufficient large distance.
 
 # Output file #2: surface_potential.dat
-containing	(1)	number	of	nodes,	number	of	triangles,	
+containing	
+
+(1)	number	of	nodes,	number	of	triangles,	
 
 (2)	node	index,	vertices,	normal	vectors,	surface	potentials	[kcal/mol/ ec],	surface	
 potential	normal	derivatives	[kcal/mol/ec/Å],	
 
-(3)	connectivity	data	for	MSMS	surface	triangulation.	
-
-The	format	is	given	below.
---------------------------------------------------
-num_node	num_triangle
-node_index	x	y	z	norm_x	norm_y	norm_z	phi	norm_phi
-...
-node_index1	node_index2	node_index3
-...
----------------------------------------------------
+(3)	connectivity	data	for	icosahedron surface	triangulation.	
 
 # Reference
  W.H. Geng	 and	 R.	 Krasny,	 A	treecode-accelerated	 boundary	 integral	 Poisson-Boltzmann	 solver	 for	
