@@ -53,5 +53,7 @@ potential	normal	derivatives	[kcal/mol/ec/Å],
 (3)	connectivity	data	for	icosahedron surface	triangulation.	
 
 # Reference
- W.H. Geng	 and	 R.	 Krasny,	 A	treecode-accelerated	 boundary	 integral	 Poisson-Boltzmann	 solver	 for	
+W.H. Geng	 and	 R.	 Krasny,	 A	treecode-accelerated	 boundary	 integral	 Poisson-Boltzmann	 solver	 for	
 electrostatics	of	solvated	biomolecules,	J.	Comput.	Phys.,	247,	62-78	(2013).
+
+This work was funded by National Science Foundation grants DMS-1418966 and DMS-1819094.
