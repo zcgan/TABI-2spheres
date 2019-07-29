@@ -6,7 +6,7 @@ Simply type make, then run the executable	file by "./tabipb.exe"  (using either 
 
 # about input files
 # inputfile #1: usrdata.in
-epsp: the dielectric constant inside the spheres
+epsp: the dielectric constant inside the spheres\\
 epsw: the dielectric constant of the solvent
 bulk_strength: the ionic concentration (M)
 den: an integer that determines the number of grids on each sphere (20*4^den)
