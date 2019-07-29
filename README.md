@@ -38,7 +38,7 @@ col#5: the radius of the sphere that enclosing the charge
 Note that for simplicity, we assume each sphere has a central charge, which is the first row of each pqr file. Starting from the second row, we list the off-centered charges. (If there is no central charge, just set the charge value of the first row to be 0)
 
 # Output file #1: energy.dat
-it gives the electrostatic free energy value in unit of Kcal/mol. 
+it gives the electrostatic free energy value in unit of kcal/mol. 
 
 Note that if one wants to get the interaction energy, then further subtract the energy value for the two spheres at sufficient large distance.
 
@@ -47,7 +47,7 @@ containing
 
 (1)	number	of	nodes,	number	of	triangles,	
 
-(2)	node	index,	vertices,	normal	vectors,	surface	potentials	[kcal/mol/ ec],	surface	
+(2)	node	index,	vertices,	normal	vectors,	surface	potentials	[kcal/mol/ec],	surface	
 potential	normal	derivatives	[kcal/mol/ec/Å],	
 
 (3)	connectivity	data	for	icosahedron surface	triangulation.	
