@@ -5,7 +5,7 @@ This repo provides a version of the TABI code for the case of two dielectric sph
 Type make, then run the executable file "./tabipb.exe".
 
 # input files
-The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data. 
+The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data. The sample data in the folder 2sphere_data is from Table 1 in Zhou (1993). 
 
 # usrdata.in (parameters for TABI)
 epsp: dielectric constant inside spheres; default is 4  
@@ -43,6 +43,8 @@ The next lines give the connectivity data	for	the surface	triangulation.
 
 # References
 W.H. Geng, R.	Krasny,	A	treecode-accelerated boundary	integral Poisson-Boltzmann solver	for	electrostatics	of	solvated	biomolecules,	J. Comput.	Phys., 247,	62-78	(2013).
+
+A.H. Juffer, E.F.F. Botta, B.A.M. van Keulen, A. van der Ploeg, H.J.C. Berendsen, The electric potential of a macromolecule in a solvent: A fundamental approach, J. Comput. Phys., 97, 144-171 (1991).
 
 H.-X. Zhou, Brownian dynamics study of the influences of electrostatic interaction and diffusion on protein-protein association kinetics, Biophys. J., 64, 1711-1726 (1993).
 
