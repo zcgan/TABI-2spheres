@@ -41,8 +41,9 @@ The next lines gives infomation about each vertex (index of vertex, xyz coordina
 
 The next lines give the connectivity data	for	the surface	triangulation.	
 
-# Reference
-W.H. Geng	 and	 R.	 Krasny,	 A	treecode-accelerated	 boundary	 integral	 Poisson-Boltzmann	 solver	 for	
-electrostatics	of	solvated	biomolecules,	J.	Comput.	Phys.,	247,	62-78	(2013).
+# References
+W.H. Geng, R.	Krasny,	A	treecode-accelerated boundary	integral Poisson-Boltzmann solver	for	electrostatics	of	solvated	biomolecules,	J. Comput.	Phys., 247,	62-78	(2013).
+
+H.-X. Zhou, Brownian dynamics study of the influences of electrostatic interaction and diffusion on protein-protein association kinetics, Biophys. J., 64, 1711-1726 (1993).
 
 This work was funded by National Science Foundation grants DMS-1418966 and DMS-1819094.
