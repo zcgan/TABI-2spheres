@@ -40,7 +40,7 @@ We assume each sphere has a central charge, which is the first line of each pqr 
 # output file 1: energy.dat
 This gives the total electrostatic free energy (Coulomb and solvation) of the 2-sphere system in units of kcal/mol. 
 
-To find the interaction energy, compute and subtract from the above value the total electrostatic free energy for the 2-sphere system when the spheres are far from each other, say a few Debye lengths. This just need to be calculated once.
+To find the interaction energy, compute and subtract from the above value the total electrostatic free energy for the 2-sphere system when the spheres are far from each other, say a few Debye lengths. This just needs to be calculated once.
 
 # output file 2: surface_potential.dat
 This gives the surface potenial values in a format suitable for plotting with VMD.
