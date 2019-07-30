@@ -1,4 +1,4 @@
-# TABI-2spheres
+# TABI-2spheres   
 This repo provides a version of the TABI code for the case of two dielectric spheres with multiple charges inside each sphere and surrounded by ionic solvent. The code solves the linear Poisson-Boltzmann equation for the surface potential using the Juffer et al. (1991) integral formulation and a boundary element method. The spheres are discretized using the icosahedral triangulation. The code is written in Fortran. 
 
 # how to run it
