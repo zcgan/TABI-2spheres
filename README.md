@@ -10,7 +10,7 @@ The parameters for TABI are in usrdata.in and the data for the two spheres is in
 # usrdata.in (parameters for TABI)
 epsp: dielectric constant inside spheres
 
-epsw: dielectric constant of solvent
+epsw: dielectric constant of solvent    
 bulk_strength: ionic concentration strength (M)
 
 den: integer number of refinement levels on each sphere; for good accuracy chose den at least 3
