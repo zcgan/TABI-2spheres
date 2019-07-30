@@ -40,7 +40,7 @@ Note that for simplicity, we assume each sphere has a central charge, which is t
 # Output file #1: energy.dat
 it gives the electrostatic free energy value in unit of kcal/mol. 
 
-Note that if one wants to get the interaction energy, then further subtract the energy value for the two spheres at sufficient large distance (it is a constant and just need to be calculated once).
+Note that if one wants to get the interaction energy, then further subtract the energy value for the two spheres at sufficient large distance, say a few Debye lengths. (It is a constant and just need to be calculated once).
 
 # Output file #2: surface_potential.dat
 containing	
