@@ -1,56 +1,55 @@
 # TABI-2spheres
-TABI specifically for the electrostatic interaction between two dielectric spheres, with multiple charges inside each sphere.
+This repo provides a version of the TABI code for the case of two dielectric spheres with multiple charges inside each sphere and surrounded by ionic solvent. The code solves the linear Poisson-Boltzmann equation for the surface potential using the Juffer et al. (1991) integral formulation and a boundary element method. The spheres are discretized using the icosahedral triangulation. The code is written in Fortran. 
 
-# How to run it
-Simply type make, then run the executable	file by "./tabipb.exe"  (using either gfortran or ifort compiler)
+# how to run it
+Type make, then run the executable file "./tabipb.exe".
 
-# about input files
-# inputfile #1: usrdata.in
-epsp: the dielectric constant inside the spheres
+# input files
+The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data.
 
-epsw: the dielectric constant of the solvent
+# usrdata.in (parameters for TABI)
+epsp: dielectric constant inside spheres
 
-bulk_strength: the ionic concentration strength (M)
+epsw: dielectric constant of solvent
 
-den: an integer that determines the number of icosahedron grids on each sphere (20*4^den), for a good accuracy, choosing den at least 3.
+bulk_strength: ionic concentration strength (M)
 
-order: treecode multipole expansion order, also need to be an integer, here set to be 3.
+den: integer number of refinement levels on each sphere; for good accuracy chose den at least 3
 
-maxparnode: the maximum particles per leaf for the tree structure
+order: treecode multipole expansion order; default value is order=3
 
-mac: multipole acceptance criterion for treecode
+maxparnode: maximum particles per leaf for octree; default value is maxparnode=500
 
-# inputfile #2: \2sphere_data\oneb_sph1(2).pqr
-There are 5 columns for each pqr file for sphere #1 and #2, that contains the information for their inside charge locations and magnitudes, and radius of each sphere.
+mac: multipole acceptance criterion for treecode; default value is mac=0.5
 
-All length are in unit of angstrom, charges in unit of e.
+# 2sphere_data (data for 2 spheres)
+This folder contains two files, oneb_sph1.pqr, oneb_sph2.pqr, with the data describing the two spheres. Each line in the files corresponds to a charge. There are 5 columns for each line containing information about the charge as follows. All lengths are in units of angstroms and charges are in units of e.
 
-col#1: x-coordinate for each point charge
+column 1: x-coordinate of charge
 
-col#2: y-coordinate for each point charge
+column 2: y-coordinate of charge
 
-col#3: z-coordinate for each point charge
+column 3: z-coordinate of charge
 
-col#4: the charge value for each point charge
+column 4: charge value of charge
 
-col#5: the radius of the sphere that enclosing the charge
+column 5: radius of sphere enclosing the charge
 
-Note that for simplicity, we assume each sphere has a central charge, which is the first row of each pqr file. Starting from the second row, we list the off-centered charges. (If there is no central charge, just set the charge value of the first row to be 0)
+We assume each sphere has a central charge, which is the first line of each pqr file. Starting from the second line, we list the off-center charges. If there is no central charge, then set the charge value of the first line to zero.
 
-# Output file #1: energy.dat
-it gives the electrostatic free energy value in unit of kcal/mol. 
+# output file 1: energy.dat
+This gives the total electrostatic free energy (Coulomb and solvation) of the 2-sphere system in units of kcal/mol. 
 
-Note that if one wants to get the interaction energy, then further subtract the energy value for the two spheres at sufficient large distance, say a few Debye lengths. (It is a constant and just need to be calculated once).
+To find the interaction energy, compute and subtract from this value the total electrostatic free energy for the 2-sphere system when the spheres are far from each other, say a few Debye lengths. This just need to be calculated once.
 
-# Output file #2: surface_potential.dat
-containing	
+# output file 2: surface_potential.dat
+This gives the surface potenial values in a format suitable for plotting with VMD.
 
-(1)	number	of	nodes,	number	of	triangles,	
+The 1st line gives the number of vertices and the number of triangles for the entire 2-sphere system.
 
-(2)	node	index,	vertices,	normal	vectors,	surface	potentials	[kcal/mol/ec],	surface	
-potential	normal	derivatives	[kcal/mol/ec/Å],	
+The next lines gives infomation about each vertex (index of vertex, xyz coordinates of vertex,	normal	vector at vertex,	surface	potential at vertex	[kcal/mol/ec], surface potential normal	derivative at vertex [kcal/mol/ec/Å].	
 
-(3)	connectivity	data	for	icosahedron surface	triangulation.	
+The next lines give the connectivity data	for	the surface	triangulation.	
 
 # Reference
 W.H. Geng	 and	 R.	 Krasny,	 A	treecode-accelerated	 boundary	 integral	 Poisson-Boltzmann	 solver	 for	
