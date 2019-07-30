@@ -5,16 +5,16 @@ This repo provides a version of the TABI code for the case of two dielectric sph
 Type make, then run the executable file "./tabipb.exe".
 
 # input files
-The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data.
+The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data. 
 
 # usrdata.in (parameters for TABI)
-epsp: dielectric constant inside spheres    
-epsw: dielectric constant of solvent    
-bulk_strength: ionic concentration strength (M)   
-den: integer number of refinement levels on each sphere; for good accuracy chose den at least 3   
-order: treecode multipole expansion order; default value is order=3   
-maxparnode: maximum particles per leaf for octree; default value is maxparnode=500    
-mac: multipole acceptance criterion for treecode; default value is mac=0.5
+epsp: dielectric constant inside spheres; default is 4  
+epsw: dielectric constant of solvent; default is 78.5  
+bulk_strength: ionic concentration strength (M); default is 1.6  
+den: integer number of refinement levels on each sphere; default is 3   
+order: treecode multipole expansion order; default is 3   
+maxparnode: maximum particles per leaf for octree; default is 500    
+mac: multipole acceptance criterion for treecode; default is 0.5
 
 # 2sphere_data (data for 2 spheres)
 This folder contains two files, oneb_sph1.pqr, oneb_sph2.pqr, with the data describing the two spheres. Each line in the files corresponds to a charge. There are 5 columns for each line containing information about the charge as follows. All lengths are in units of angstroms and charges are in units of e.
