@@ -19,14 +19,10 @@ mac: multipole acceptance criterion for treecode; default value is mac=0.5
 # 2sphere_data (data for 2 spheres)
 This folder contains two files, oneb_sph1.pqr, oneb_sph2.pqr, with the data describing the two spheres. Each line in the files corresponds to a charge. There are 5 columns for each line containing information about the charge as follows. All lengths are in units of angstroms and charges are in units of e.
 
-column 1: x-coordinate of charge
-
-column 2: y-coordinate of charge
-
-column 3: z-coordinate of charge
-
-column 4: charge value of charge
-
+column 1: x-coordinate of charge    
+column 2: y-coordinate of charge    
+column 3: z-coordinate of charge    
+column 4: charge value of charge    
 column 5: radius of sphere enclosing the charge
 
 We assume each sphere has a central charge, which is the first line of each pqr file. Starting from the second line, we list the off-center charges. If there is no central charge, then set the charge value of the first line to zero.
