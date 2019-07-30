@@ -43,7 +43,7 @@ This gives the total electrostatic free energy (Coulomb and solvation) of the 2-
 To find the interaction energy, compute and subtract from the above value the total electrostatic free energy for the 2-sphere system when the spheres are far from each other, say a few Debye lengths. This just needs to be calculated once.
 
 # output file 2: surface_potential.dat
-This gives the surface potenial values in a format suitable for plotting with VMD.
+This gives the surface potential values in a format suitable for plotting with VMD.
 
 The 1st line gives the number of vertices and the number of triangles for the entire 2-sphere system.
 
