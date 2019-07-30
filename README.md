@@ -8,17 +8,12 @@ Type make, then run the executable file "./tabipb.exe".
 The parameters for TABI are in usrdata.in and the data for the two spheres is in the folder 2sphere_data.
 
 # usrdata.in (parameters for TABI)
-epsp: dielectric constant inside spheres
-
+epsp: dielectric constant inside spheres    
 epsw: dielectric constant of solvent    
-bulk_strength: ionic concentration strength (M)
-
-den: integer number of refinement levels on each sphere; for good accuracy chose den at least 3
-
-order: treecode multipole expansion order; default value is order=3
-
-maxparnode: maximum particles per leaf for octree; default value is maxparnode=500
-
+bulk_strength: ionic concentration strength (M)   
+den: integer number of refinement levels on each sphere; for good accuracy chose den at least 3   
+order: treecode multipole expansion order; default value is order=3   
+maxparnode: maximum particles per leaf for octree; default value is maxparnode=500    
 mac: multipole acceptance criterion for treecode; default value is mac=0.5
 
 # 2sphere_data (data for 2 spheres)
