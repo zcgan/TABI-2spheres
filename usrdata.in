@@ -1,6 +1,6 @@
-epsp 4
+epsp 4.0
 epsw 78.5
-bulk_strength 1.6
+bulk_strength 0.16
 den 3
 order 3
 maxparnode 500

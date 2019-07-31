@@ -10,7 +10,7 @@ The parameters for TABI are in usrdata.in and the data for the two spheres is in
 # usrdata.in (parameters for TABI)
 epsp: dielectric constant inside spheres; default is 4  
 epsw: dielectric constant of solvent; default is 78.5  
-bulk_strength: ionic concentration strength (M); default is 1.6  
+bulk_strength: ionic concentration strength (M); default is 0.16  
 den: integer number of refinement levels on each sphere; default is 3   
 order: treecode multipole expansion order; default is 3   
 maxparnode: maximum particles per leaf for octree; default is 500    
